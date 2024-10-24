@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    color: #888888;
+}
+
+section {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.hov-img-zoom {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.hov-img-zoom img {
+    transition: transform 0.3s ease;
+}
+
+.hov-img-zoom:hover img {
+    transform: scale(1.02);
+}
+
+/* header */
+
+.header {
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    /*khi kéo xuống header ko đè lên các cái khác*/
+}
+
+/* PC */
+
+
+
+
+.text-secondary {
+    font-size: 18px;
+    text-align: center;
+}
+
+.icon,
+.free-ship,
+.gmail {
+    padding: 8px;
+}
+
+.free-ship {}
+
+.icon-item {
+    font-size: 28px;
+    padding: 8px;
+}
+
+.header-first-line {
+    /* background-color: #f5f5f5; */
+    padding: 8px 0;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-icon {
+    width: 120px;
+    height: 27px;
+}
+
+.logo-link {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.active {
+    color: firebrick;
+}
+
+.account {
+    padding: 10px;
+}
+
+.header-second-line {
+    padding: 12px 0;
+}
+
+/* Mobile and Tablet */
+
+.header-menu-tablet {
+    box-shadow: 0px 0px 16px lightgray;
+}
+
+.mobile-navbar {
+    width: fit-content;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logo-link-mobile {
+    margin-top: 16px;
+}
+
+.logo-icon-mobile {
+    width: 120px;
+    height: 27px;
+    margin-top: 10px;
+}
+
+.nav-item-mobile {
+    width: 100%;
+}
+
+.link-text-mobile {
+    padding: 10px;
+}
+
+.navbar-menu-mobile {
+    display: none;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transition-delay: .14s;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transform: rotate(45deg);
+}
+
+.hamburger--squeeze .hamburger-inner:before {
+    transition: top .1s ease .14s, opacity .1s ease;
+}
+
+.hamburger--squeeze .hamburger-inner:after {
+    transition: bottom .1s ease .14s, transform .1s cubic-bezier(.55, .055, .675, .19);
+}
+
+/* center - section */
+
+.slide {
+    position: relative;
+}
+
+/* background-image: url(&quot;images/master-slide-03.jpg&quot;); width: 1024px; position: relative; left: -1024px; top: 0px; z-index: 999; opacity: 1;    
+
+background-image: url(&quot;images/master-slide-02.jpg&quot;); width: 1024px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s; */
+
+.img-thumbnail {
+    width: 100%;
+    height: 512px;
+}
+
+.introduce {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.caption1,
+.caption2,
+.shop-now {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.caption1 {
+    font-size: 24px;
+    visibility: visible;
+    animation: xoayChieuKimDongHo 0.5s ease forwards;
+}
+
+.caption2 {
+    font-size: 48px;
+    visibility: visible;
+    animation: xoayChieuKimDongHo 0.5s ease forwards;
+}
+
+.shop-now {
+    justify-content: space-around;
+}
+
+.shop-now-btn {
+    padding: 16px 32px;
+    border-radius: 32px;
+    border: 2px solid #888888;
+    animation: xuatHien 0.75s ease forwards;
+}
+
+
+
+
+/* popular */
+
+.popular {}
+
+.popular-item {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 16px lightgray;
+    margin: 64px 0;
+    border-radius: 16px;
+}
+
+
+.popular-item-img {
+    margin: 0;
+    padding: 10% 3%;
+    box-sizing: border-box;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.btn-buy-now {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    /*nằm giữa thẻ cha*/
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 250;
+    padding: 16px;
+    border: none;
+    min-width: 25%;
+    max-width: 50%;
+    margin: auto;
+    background-color: lightgray;
+    color: black;
+}
+
+/* section sp bán chạy */
+
+.bestseller {
+    display: block;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.img-item-uudai {
+    width: 100%;
+    margin: auto;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+
+}
+
+.bestseller-item {
+    box-shadow: 0px 0px 16px lightgray;
+    border-radius: 32px;
+    padding: 0;
+    background-color: rgba(231, 231, 231, 0.788);
+    position: relative;
+}
+
+.item-uudai-detail {
+    padding: 5%;
+    font-size: 1rem;
+}
+
+
+
+.them-vao-gio-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 70%;
+}
+
+
+.chiTietSanPham:hover {
+    color: #999999 !important;
+    text-decoration: dashed !important;
+}
+
+/* blog */
+
+.blog-container {
+    box-shadow: 0px 0px 16px lightgray;
+    border-radius: 32px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.blog-img {
+    width: 100%;
+    border-radius: 32px;
+}
+
+.blog-text>a,
+.blog-text>p>a {
+    text-decoration: none;
+}
+
+.blog-text>p {
+    margin: 0;
+}
+
+.blog-text {
+    padding: 5%;
+}
+
+.blog-text>* {
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* chinh sach  */
+.chinhsach-item {
+    padding: 2.5%;
+}
+
+.chinhsach-item>p {
+    text-align: justify;
+    color: #434343;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.chinhsach-item>p>a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.chinhsach-item>p>a:hover {
+    color: brown;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 5%;
+    background-color: #e8e6e6;
+}
+
+.lienhe-option>a {
+    width: 10%;
+}
+
+.bank {
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 2.5%;
+}
+
+.bank>a {
+    display: inline-block;
+}
+
+.footer-link-item:hover {
+    color: #000;
+}
+
+/* animation */
+@keyframes xoayChieuKimDongHo {
+    from {
+        transform: rotate3d(0, 0, 1, 90deg);
+        opacity: 0;
+    }
+
+    to {
+        transition: rotate3d(1, 1, 1, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes bienMatNguocChieuDongHo {
+    from {
+        transform: rotate3d(1, 1, 1, 0);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate3d(0, 0, -1, 90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes xuatHien {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
