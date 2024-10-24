@@ -1,0 +1,381 @@
+/* Tổng thể */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2e8cf;
+    /* Nền sáng nhẹ */
+    color: #386641;
+    /* Màu text chính */
+}
+
+header {
+    background-color: #386641;
+    /* Xanh đậm cho header */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f2e8cf;
+    /* Màu sáng cho text header */
+}
+
+.navbar .logo img {
+    height: 60px;
+}
+
+.contact-info {
+    font-size: 1em;
+    color: #a7c957;
+    /* Màu xanh nhẹ hơn cho thông tin liên hệ */
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+/* Phần Hero */
+.hero {
+    background-image: url('https://i.ibb.co/GJcQTbc/Untitled-design-37.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2e8cf;
+    /* Màu sáng cho text */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #6a994e;
+    /* Xanh lá nổi bật cho tiêu đề */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #a7c957;
+    /* Xanh nhẹ hơn cho đoạn văn */
+}
+
+.cta-button {
+    background-color: #bc4749;
+    /* Nút hành động với màu đỏ tinh tế */
+    padding: 10px 20px;
+    color: #f2e8cf;
+    /* Màu sáng cho text trên nút */
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #6a994e;
+    /* Xanh lá nhẹ khi hover */
+}
+
+/* Đáp ứng cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Lợi ích của ống hút từ thực vật */
+#benefits {
+    padding: 50px;
+    background-color: #f2e8cf;
+    /* Nền sáng nhẹ */
+    text-align: center;
+}
+
+#benefits h2 {
+    font-size: 2.5em;
+    color: #386641;
+    /* Màu xanh đậm cho tiêu đề */
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.benefit-item {
+    max-width: 300px;
+    background-color: #6a994e;
+    /* Nền xanh lá nhẹ */
+    color: #f2e8cf;
+    /* Màu sáng cho văn bản */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.benefit-item i {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #bc4749;
+    /* Màu đỏ nổi bật cho biểu tượng */
+}
+
+.benefit-item h3 {
+    margin-bottom: 10px;
+    color: #f2e8cf;
+    /* Màu sáng cho tiêu đề */
+}
+
+.benefit-item p {
+    color: #f2e8cf;
+    /* Màu sáng cho mô tả */
+}
+
+/* Lợi ích cho sức khỏe */
+#health-benefits {
+    padding: 50px;
+    background-color: #a7c957;
+    /* Nền xanh nhạt */
+    text-align: center;
+}
+
+#health-benefits h2 {
+    font-size: 2.5em;
+    color: #386641;
+    /* Màu xanh đậm cho tiêu đề */
+}
+
+.health-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.health-container img {
+    width: 500px;
+    /* Tăng kích thước hình ảnh */
+    height: auto;
+    border-radius: 10px;
+}
+
+.health-text {
+    max-width: 500px;
+    /* Cân bằng kích thước với hình ảnh */
+    text-align: left;
+}
+
+.health-text h3 {
+    color: #386641;
+    /* Màu xanh đậm cho tiêu đề */
+    margin-bottom: 15px;
+}
+
+.health-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.health-text ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #344e41;
+    /* Màu xanh đậm cho văn bản */
+}
+
+.health-text ul li i {
+    color: #bc4749;
+    /* Màu đỏ cho biểu tượng check */
+    margin-right: 10px;
+}
+
+/* Ý tưởng và lợi thế về ống hút của Nature's Straw */
+#components {
+    padding: 50px;
+    background-color: #f2e8cf;
+    /* Nền sáng nhẹ */
+    text-align: center;
+}
+
+#components h2 {
+    font-size: 2.5em;
+    color: #386641;
+    /* Màu xanh đậm cho tiêu đề */
+    margin-bottom: 40px;
+}
+
+/* Phần hình ảnh */
+.component-image img {
+    width: 400px;
+    /* Kích thước lớn hơn cho hình ảnh chính */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.components-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.component-item {
+    width: 200px;
+    background-color: #6a994e;
+    /* Nền xanh lá nhẹ */
+    color: #f2e8cf;
+    /* Màu sáng cho văn bản */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.component-item:hover {
+    transform: translateY(-5px);
+    /* Hiệu ứng khi hover */
+}
+
+.component-item i {
+    font-size: 2em;
+    /* Kích thước lớn cho icon */
+    color: #bc4749;
+    /* Màu đỏ nổi bật cho icon */
+    margin-bottom: 10px;
+}
+
+.component-item h3 {
+    color: #f2e8cf;
+    /* Màu sáng cho tiêu đề */
+    margin-bottom: 8px;
+}
+
+.component-item p {
+    font-size: 0.9em;
+    color: #f2e8cf;
+    /* Màu sáng cho mô tả */
+}
+
+/* Phần liên hệ */
+#contact {
+    padding: 50px;
+    background-color: #f2e8cf;
+    /* Nền sáng nhẹ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    color: #386641;
+    /* Màu xanh đậm */
+    margin-bottom: 20px;
+}
+
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vertical-form input,
+.vertical-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #6a994e;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.vertical-form button {
+    padding: 10px 20px;
+    background-color: #6a994e;
+    /* Màu nút */
+    color: #f2e8cf;
+    /* Màu chữ nút */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vertical-form button:hover {
+    background-color: #bc4749;
+    /* Hiệu ứng khi hover */
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: #386641;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.5em;
+    color: #6a994e;
+    margin-bottom: 20px;
+}
+
+.product-video h3 {
+    font-size: 1.5em;
+    color: #386641;
+    margin-bottom: 10px;
+}
+
+.product-video iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Phần footer */
+#footer {
+    background-color: #386641;
+    /* Nền màu xanh đậm */
+    padding: 20px;
+    text-align: center;
+    color: #f2e8cf;
+    /* Màu chữ sáng */
+}
+
+#footer .footer-content {
+    font-size: 1em;
+}
+
+#footer p {
+    margin: 5px 0;
+}
